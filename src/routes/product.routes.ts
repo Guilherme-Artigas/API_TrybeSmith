@@ -6,6 +6,11 @@ const router = Router();
 
 const productController = new ProductController();
 
+router.get(
+  '/',
+  (req, res) => productController.getAllProduct(req, res),
+);
+
 router.post(
   '/',
   validateNewProductRegistration,
