@@ -10,6 +10,14 @@ export default class UserService {
     this.model = new UserModel(connection);
   }
 
+  public async login(username: string, password: string) {
+    const userFound = await this.model.login(username, password);
+    if (!userFound) return { message: 'Username or password invalid' };
+    const { id } = userFound;
+    const token = createTokenJWT({ id, username });
+    return token;
+  }
+
   public async createUser(user : IUser) : Promise<string> {
     const newUser = await this.model.createUser(user);
     const token = createTokenJWT(newUser);
