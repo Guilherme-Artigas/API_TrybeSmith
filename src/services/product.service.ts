@@ -1,8 +1,8 @@
 import connection from '../models/connection';
 import ProductModel from '../models/product.model';
-import IProduct from '../interfaces/product'; 
+import IProduct from '../interfaces/product.interface'; 
 
-class ProductService {
+export default class ProductService {
   private model : ProductModel;
 
   constructor() {
@@ -17,5 +17,3 @@ class ProductService {
     return this.model.createProduct(product);
   }
 }
-
-export default ProductService;

@@ -1,6 +1,6 @@
 import connection from '../models/connection';
 import UserModel from '../models/user.model';
-import IUser from '../interfaces/user';
+import IUser from '../interfaces/user.interface';
 import createTokenJWT from '../utils/token.generate';
 
 export default class UserService {

@@ -1,6 +1,6 @@
 import jwt, { SignOptions } from 'jsonwebtoken';
 import dotenv from 'dotenv';
-import IUser from '../interfaces/user';
+import IUser from '../interfaces/user.interface';
 
 dotenv.config();
 
