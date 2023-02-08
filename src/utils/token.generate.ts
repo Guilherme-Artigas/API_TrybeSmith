@@ -1,4 +1,4 @@
-import jwt, { SignOptions } from 'jsonwebtoken';
+import jwt, { SignOptions, JwtPayload } from 'jsonwebtoken';
 import dotenv from 'dotenv';
 import IUser from '../interfaces/user.interface';
 
@@ -6,7 +6,7 @@ dotenv.config();
 
 const SECRET = process.env.JWT_SECRET || 'wow';
 
-function createTokenJWT(user : IUser) {
+export function createTokenJWT(user : IUser) {
   const config : SignOptions = {
     expiresIn: '3d',
     algorithm: 'HS256',
@@ -15,4 +15,13 @@ function createTokenJWT(user : IUser) {
   return token;
 }
 
-export default createTokenJWT;
+export function validateToken(token: string | undefined) : string | JwtPayload | void {
+  try {
+    if (token !== undefined) {
+      const decoded = jwt.verify(token, SECRET);
+      return decoded;
+    }
+  } catch (e) {
+    console.log(e);
+  }
+}

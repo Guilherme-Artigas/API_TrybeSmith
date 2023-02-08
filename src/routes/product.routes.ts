@@ -11,6 +11,11 @@ router.get(
   (req, res) => productController.getAllProduct(req, res),
 );
 
+router.get(
+  '/:id',
+  (req, res) => productController.getProductById(req, res),
+);
+
 router.post(
   '/',
   validateNameProduct,

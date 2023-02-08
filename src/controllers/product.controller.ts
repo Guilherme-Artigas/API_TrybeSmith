@@ -14,6 +14,14 @@ export default class ProductController {
     res.status(statusCode.OK).json(listProducts);
   }
 
+  public async getProductById(req: Request, res: Response) {
+    const productFound = await this.model.getProductById(parseInt(req.params.id, 10));
+    if (!productFound) {
+      return res.status(statusCode.NOT_FOUND).json({ message: 'Product not found' });
+    }
+    res.status(statusCode.OK).json(productFound);
+  }
+
   public async createProduct(req: Request, res: Response) {
     const productCreated = await this.model.createProduct(req.body);
     res.status(statusCode.CREATED).json(productCreated);

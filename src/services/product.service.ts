@@ -13,6 +13,10 @@ export default class ProductService {
     return this.model.getAllProducts();
   }
 
+  public async getProductById(id: number) : Promise<IProduct> {
+    return this.model.getProductById(id);
+  }
+
   public async createProduct(product : IProduct) : Promise<IProduct> {
     return this.model.createProduct(product);
   }

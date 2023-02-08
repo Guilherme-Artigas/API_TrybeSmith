@@ -1,7 +1,7 @@
 import connection from '../models/connection';
 import UserModel from '../models/user.model';
 import IUser from '../interfaces/user.interface';
-import createTokenJWT from '../utils/token.generate';
+import { createTokenJWT } from '../utils/token.generate';
 
 export default class UserService {
   private model : UserModel;
