@@ -1,0 +1,290 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "TrybeSmith",
+    "dateExported": "2023-02-09T19:17:37.272Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "475c3ef7-2311-48f0-8917-34a66af257cf",
+            "name": "POST Product",
+            "containerId": "",
+            "created": "2023-02-06T20:46:27.557Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "8cbf43ef-6e30-42a9-9672-01924f3033b1",
+            "name": "POST User",
+            "containerId": "",
+            "created": "2023-02-07T14:40:17.967Z",
+            "sortNum": 15000
+        },
+        {
+            "_id": "23f5690e-e7ee-424f-ab5c-680012cd6a34",
+            "name": "Login",
+            "containerId": "",
+            "created": "2023-02-07T19:08:59.150Z",
+            "sortNum": 17500
+        },
+        {
+            "_id": "a556c4d3-eb93-477a-918d-be3ad3d33c96",
+            "name": "GET Lista Completa",
+            "containerId": "",
+            "created": "2023-02-06T21:51:27.759Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "015eef85-ed9c-4692-b194-de345e23491e",
+            "colId": "9b863fac-4a9a-4114-b181-b1b1faeea911",
+            "containerId": "475c3ef7-2311-48f0-8917-34a66af257cf",
+            "name": "Cadastra Produto 1",
+            "url": "http://localhost:3000/products",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2023-02-06T20:49:50.223Z",
+            "modified": "2023-02-06T20:51:13.734Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Espada Longa\",\n  \"amount\": \"30 Peças de ouro\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bedd26f6-833f-4ba7-ad6c-bccd10d638f7",
+            "colId": "9b863fac-4a9a-4114-b181-b1b1faeea911",
+            "containerId": "475c3ef7-2311-48f0-8917-34a66af257cf",
+            "name": "Cadastra Produto 2",
+            "url": "http://localhost:3000/products",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-02-06T20:46:53.275Z",
+            "modified": "2023-02-06T20:50:13.089Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Adaga\",\n  \"amount\": \"10 Peças de ouro\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7115d2e1-4800-448f-ae38-fb4e581bd2ee",
+            "colId": "9b863fac-4a9a-4114-b181-b1b1faeea911",
+            "containerId": "a556c4d3-eb93-477a-918d-be3ad3d33c96",
+            "name": "Produtos",
+            "url": "http://localhost:3000/products",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-02-06T21:51:52.572Z",
+            "modified": "2023-02-06T21:52:13.331Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "428b5f0c-272e-477f-b821-a87ee512f8ed",
+            "colId": "9b863fac-4a9a-4114-b181-b1b1faeea911",
+            "containerId": "475c3ef7-2311-48f0-8917-34a66af257cf",
+            "name": "Cadastra Produto 3",
+            "url": "http://localhost:3000/products",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-02-06T20:50:41.391Z",
+            "modified": "2023-02-06T20:52:04.446Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Cajado one hand\",\n  \"amount\": \"20 Peças de ouro\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b0904278-3fb9-40d7-8960-ae021ffc1895",
+            "colId": "9b863fac-4a9a-4114-b181-b1b1faeea911",
+            "containerId": "475c3ef7-2311-48f0-8917-34a66af257cf",
+            "name": "Cadastra Produto 4",
+            "url": "http://localhost:3000/products",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-02-06T20:52:16.024Z",
+            "modified": "2023-02-06T20:52:40.385Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Cajado two hand\",\n  \"amount\": \"25 Peças de ouro\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "807a408f-2645-487a-8dbd-8b4b80fa9cb3",
+            "colId": "9b863fac-4a9a-4114-b181-b1b1faeea911",
+            "containerId": "475c3ef7-2311-48f0-8917-34a66af257cf",
+            "name": "Cadastra Produto 5",
+            "url": "http://localhost:3000/products",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-02-06T21:06:49.620Z",
+            "modified": "2023-02-06T21:40:39.508Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Maça\",\n  \"amount\": \"40 Peças de ouro\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f658327a-cff7-4f01-8b90-f7b892beb1e2",
+            "colId": "9b863fac-4a9a-4114-b181-b1b1faeea911",
+            "containerId": "475c3ef7-2311-48f0-8917-34a66af257cf",
+            "name": "Cadastro de produtos sem amount",
+            "url": "http://localhost:3000/products",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-02-06T21:39:26.364Z",
+            "modified": "2023-02-06T21:41:23.809Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Maça\",\n  \"a\": \"40 Peças de ouro\"\n}",
+                "form": []
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "400"
+                }
+            ]
+        },
+        {
+            "_id": "e13e8427-fd60-4fb6-b096-b0635d85ba3e",
+            "colId": "9b863fac-4a9a-4114-b181-b1b1faeea911",
+            "containerId": "475c3ef7-2311-48f0-8917-34a66af257cf",
+            "name": "Cadastro de produtos sem name",
+            "url": "http://localhost:3000/products",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-02-06T21:41:05.502Z",
+            "modified": "2023-02-06T21:41:05.502Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"a\": \"Maça\",\n  \"amount\": \"40 Peças de ouro\"\n}",
+                "form": []
+            },
+            "tests": [
+                {
+                    "type": "res-code",
+                    "custom": "",
+                    "action": "equal",
+                    "value": "400"
+                }
+            ]
+        },
+        {
+            "_id": "b1da7a7f-0169-4531-a3c3-657deb61c879",
+            "colId": "9b863fac-4a9a-4114-b181-b1b1faeea911",
+            "containerId": "8cbf43ef-6e30-42a9-9672-01924f3033b1",
+            "name": "New User 1",
+            "url": "http://localhost:3000/users",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-02-07T14:40:52.711Z",
+            "modified": "2023-02-07T14:42:14.459Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \n  \"username\": \"Guldan\",\n  \"vocation\": \"Warlock\",\n  \"level\": 70,\n  \"password\": \"iloveDarck\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "66406670-24da-4168-b58c-0e9545875e02",
+            "colId": "9b863fac-4a9a-4114-b181-b1b1faeea911",
+            "containerId": "8cbf43ef-6e30-42a9-9672-01924f3033b1",
+            "name": "New User 2",
+            "url": "http://localhost:3000/users",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-02-07T14:43:25.745Z",
+            "modified": "2023-02-08T14:22:57.508Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \n  \"username\": \"Jaina\",\n  \"vocation\": \"Mage\",\n  \"level\": 70,\n  \"password\": \"Jaina123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fd1d5a47-60c9-4c6d-b0d0-d3c915e9ac53",
+            "colId": "9b863fac-4a9a-4114-b181-b1b1faeea911",
+            "containerId": "a556c4d3-eb93-477a-918d-be3ad3d33c96",
+            "name": "Orders",
+            "url": "http://localhost:3000/orders",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-02-07T18:14:27.800Z",
+            "modified": "2023-02-07T18:14:45.800Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d0a3d963-ea50-4472-a8c6-52b9252f2692",
+            "colId": "9b863fac-4a9a-4114-b181-b1b1faeea911",
+            "containerId": "8cbf43ef-6e30-42a9-9672-01924f3033b1",
+            "name": "New User 3",
+            "url": "http://localhost:3000/users",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-02-07T14:44:05.765Z",
+            "modified": "2023-02-08T14:23:12.271Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \n  \"username\": \"Voljin\",\n  \"vocation\": \"Rogue\",\n  \"level\": 65,\n  \"password\": \"Voljin123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e92b5b34-c582-448c-a7ad-e28d44561dce",
+            "colId": "9b863fac-4a9a-4114-b181-b1b1faeea911",
+            "containerId": "23f5690e-e7ee-424f-ab5c-680012cd6a34",
+            "name": "User 1",
+            "url": "http://localhost:3000/login",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-02-07T19:09:13.789Z",
+            "modified": "2023-02-07T19:38:39.175Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"username\": \"reigal\",\n    \"password\": \"1dragaonoceu\"\n  }",
+                "form": []
+            },
+            "tests": []
+        }
+    ],
+    "settings": {}
+}
